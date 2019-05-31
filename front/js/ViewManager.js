@@ -8,6 +8,9 @@
 /** Valida los campos requeridos en un formulario
  * Returns flag Devuelve true si el form cuenta con los datos mÃ­nimos requeridos
  */
+
+var rutaBack="back"
+
 function validarForm(idForm){
 	var form=$('#'+idForm)[0];
 	for (var i = 0; i < form.length; i++) {
@@ -24,8 +27,7 @@ function preJuegoInsert(idForm){
      //Haga aquÃ­ las validaciones necesarias antes de enviar el formulario.
 	if(validarForm(idForm)){
  	var formData=$('#'+idForm).serialize();
-     formData["ruta"]="JuegoInsert";
- 	enviar(formData,,postJuegoInsert);
+ 	enviar(formData,rutaBack+"/Juego/Insert",postJuegoInsert);
  	}else{
  		alert("Debe llenar los campos requeridos");
  	}
@@ -47,9 +49,7 @@ function preJuegoInsert(idForm){
 function preJuegoList(container){
      //Solicite informaciÃ³n del servidor
      cargaContenido(container,'front/JuegoList.html'); 
-     var formData = {};
-     formData["ruta"]="JuegoList";
- 	enviar("",,postJuegoList); 
+ 	enviar("",rutaBack+"/Juego/List",postJuegoList); 
 }
 
  function postJuegoList(result,state){
@@ -77,8 +77,7 @@ function preJuegojugadorInsert(idForm){
      //Haga aquÃ­ las validaciones necesarias antes de enviar el formulario.
 	if(validarForm(idForm)){
  	var formData=$('#'+idForm).serialize();
-     formData["ruta"]="JuegojugadorInsert";
- 	enviar(formData,,postJuegojugadorInsert);
+ 	enviar(formData,rutaBack+"/Juegojugador/Insert",postJuegojugadorInsert);
  	}else{
  		alert("Debe llenar los campos requeridos");
  	}
@@ -102,7 +101,7 @@ function preJuegojugadorList(container){
      cargaContenido(container,'front/JuegojugadorList.html'); 
      var formData = {};
      formData["ruta"]="JuegojugadorList";
- 	enviar("",,postJuegojugadorList); 
+ 	enviar("",rutaBack+"/Juegojugador/List",postJuegojugadorList); 
 }
 
  function postJuegojugadorList(result,state){
@@ -130,8 +129,7 @@ function preJugadorInsert(idForm){
      //Haga aquÃ­ las validaciones necesarias antes de enviar el formulario.
 	if(validarForm(idForm)){
  	var formData=$('#'+idForm).serialize();
-     formData["ruta"]="JugadorInsert";
- 	enviar(formData,,postJugadorInsert);
+ 	enviar(formData,rutaBack+"/Jugador/Insert",postJugadorInsert);
  	}else{
  		alert("Debe llenar los campos requeridos");
  	}
@@ -153,9 +151,7 @@ function preJugadorInsert(idForm){
 function preJugadorList(container){
      //Solicite informaciÃ³n del servidor
      cargaContenido(container,'front/JugadorList.html'); 
-     var formData = {};
-     formData["ruta"]="JugadorList";
- 	enviar("",,postJugadorList); 
+ 	enviar("",rutaBack+"/Jugador/List",postJugadorList); 
 }
 
  function postJugadorList(result,state){
@@ -183,8 +179,7 @@ function preTipoInsert(idForm){
      //Haga aquÃ­ las validaciones necesarias antes de enviar el formulario.
 	if(validarForm(idForm)){
  	var formData=$('#'+idForm).serialize();
-     formData["ruta"]="TipoInsert";
- 	enviar(formData,,postTipoInsert);
+ 	enviar(formData,rutaBack+"/Tipo/Insert",postTipoInsert);
  	}else{
  		alert("Debe llenar los campos requeridos");
  	}
@@ -206,9 +201,7 @@ function preTipoInsert(idForm){
 function preTipoList(container){
      //Solicite informaciÃ³n del servidor
      cargaContenido(container,'front/TipoList.html'); 
-     var formData = {};
-     formData["ruta"]="TipoList";
- 	enviar("",,postTipoList); 
+ 	enviar("",rutaBack+"/Tipo/List",postTipoList); 
 }
 
  function postTipoList(result,state){
