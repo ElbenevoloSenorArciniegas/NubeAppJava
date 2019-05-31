@@ -9,7 +9,7 @@
  * Returns flag Devuelve true si el form cuenta con los datos mÃ­nimos requeridos
  */
 
-var rutaBack="back"
+var rutaBack="/back"
 
 function validarForm(idForm){
 	var form=$('#'+idForm)[0];
