@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<!--              -------Creado por-------               -->
+<!--             \(x.x )/ Anarchy \( x.x)/               -->
+<!--              ------------------------               -->
+
+<!--//    Ya no la quiero, es cierto, pero tal vez la quiero. Es tan corto el amor, y es tan largo el olvido.  \\                  -->
+<head>
+    <meta charset="UTF-8">  
+    <link rel="shortcut icon" href="http://drive.google.com/uc?export=view&id=1CbzDwRAhm5eMp0tlMlZCgyRB3lO3qV8D ">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>(x.x ) AnarchyCode ( x.x)</title>      
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css ">
+    <!-- Pon tus CSS propios aquÃ­ -->
+</head>
+<body>
+    <header>
+        <div class="jumbotron" style="background-color: #000; color: #aaa; padding-left: 30px">
+            <h1><img src="http://drive.google.com/uc?export=view&id=1CbzDwRAhm5eMp0tlMlZCgyRB3lO3qV8D " style="height: 40px;border-radius:50%; " class="navbar-text">An Anarchy code</h1> 
+            <p style="float: left;">NEVERMORE</p> 
+            <h3><a href="#" style="float: right; margin-right: 30px;"><span class="glyphicon glyphicon-off"></span></a></h3>
+        </div>
+    </header>
+
+  <div class="row" style="margin-top: 100px">
+    <div class="col col-xs-12 col-md-2 " >
+      <div class="panel-group" id="accordion">
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h4 class="panel-title">
+            <a data-toggle="collapse" data-parent="#accordion" href="#collapseJuego">Juego</a>
+            </h4>
+          </div>
+          <div id="collapseJuego" class="panel-collapse collapse in">
+            <div class="list-group">
+              <a href="javascript:preJuegoList('main')" class="list-group-item"><span class="glyphicon glyphicon-list"></span>    Listar</a>
+              <a href="javascript:cargaContenido('main','front/JuegoInsert.html')" class="list-group-item"><span class="glyphicon glyphicon-pencil"></span>    Insertar</a>
+            </div>
+          </div>
+        </div>
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h4 class="panel-title">
+            <a data-toggle="collapse" data-parent="#accordion" href="#collapseJuegojugador">Juegojugador</a>
+            </h4>
+          </div>
+          <div id="collapseJuegojugador" class="panel-collapse collapse in">
+            <div class="list-group">
+              <a href="javascript:preJuegojugadorList('main')" class="list-group-item"><span class="glyphicon glyphicon-list"></span>    Listar</a>
+              <a href="javascript:cargaContenido('main','front/JuegojugadorInsert.html')" class="list-group-item"><span class="glyphicon glyphicon-pencil"></span>    Insertar</a>
+            </div>
+          </div>
+        </div>
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h4 class="panel-title">
+            <a data-toggle="collapse" data-parent="#accordion" href="#collapseJugador">Jugador</a>
+            </h4>
+          </div>
+          <div id="collapseJugador" class="panel-collapse collapse in">
+            <div class="list-group">
+              <a href="javascript:preJugadorList('main')" class="list-group-item"><span class="glyphicon glyphicon-list"></span>    Listar</a>
+              <a href="javascript:cargaContenido('main','front/JugadorInsert.html')" class="list-group-item"><span class="glyphicon glyphicon-pencil"></span>    Insertar</a>
+            </div>
+          </div>
+        </div>
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h4 class="panel-title">
+            <a data-toggle="collapse" data-parent="#accordion" href="#collapseTipo">Tipo</a>
+            </h4>
+          </div>
+          <div id="collapseTipo" class="panel-collapse collapse in">
+            <div class="list-group">
+              <a href="javascript:preTipoList('main')" class="list-group-item"><span class="glyphicon glyphicon-list"></span>    Listar</a>
+              <a href="javascript:cargaContenido('main','front/TipoInsert.html')" class="list-group-item"><span class="glyphicon glyphicon-pencil"></span>    Insertar</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div> 
+    <div class="container">
+      <div id="main" class="col col-xs-12 col-md-10 " >
+      </div> 
+    </div> 
+  </div>
+    <footer style="background-color: black; color: white; text-align: center; padding: 10px; clear: both;">
+        <p>Anarchy Â© 2018 <br>Todos los derechos y algunos izquierdos reservados</p>
+    </footer>
+    <script src="front/js/Ajax.js "></script>
+    <script src="front/js/ViewManager.js "></script>
+    <script src="front/js/HtmlBuilder.js "></script>
+    <!-- Pon tus js aquÃ­ -->    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js "></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js "></script>
+
+    <!-- Carga de datos inicial -->
+    <script type="text/javascript">
+        cargaContenido('main','front/JuegoInsert.html');
+    </script>
+</body>
+
+<!-- That`s all folks! -->
+</html>
