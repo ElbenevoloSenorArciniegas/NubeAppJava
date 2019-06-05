@@ -9,7 +9,7 @@
  * Returns flag Devuelve true si el form cuenta con los datos mÃ­nimos requeridos
  */
 
-var rutaBack="/back"
+var rutaBack="localhost/back"
 
 function validarForm(idForm){
 	var form=$('#'+idForm)[0];
@@ -48,7 +48,7 @@ function preJuegoInsert(idForm){
 
 function preJuegoList(container){
      //Solicite informaciÃ³n del servidor
-     cargaContenido(container,'front/JuegoList.html'); 
+     cargaContenido(container,'JuegoList.html'); 
  	enviar("",rutaBack+"/Juego/List",postJuegoList); 
 }
 
@@ -98,7 +98,7 @@ function preJuegojugadorInsert(idForm){
 
 function preJuegojugadorList(container){
      //Solicite informaciÃ³n del servidor
-     cargaContenido(container,'front/JuegojugadorList.html'); 
+     cargaContenido(container,'JuegojugadorList.html'); 
      var formData = {};
      formData["ruta"]="JuegojugadorList";
  	enviar("",rutaBack+"/Juegojugador/List",postJuegojugadorList); 
